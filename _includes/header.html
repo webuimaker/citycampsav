@@ -28,11 +28,7 @@
 			<div class="collapse navbar-collapse" id="navigation">
 				<ul class="nav navbar-nav">
 					 {% for item in site.data.nav %}
-					  {% if item.section_id == page.section_id %}
-						{% assign active_class = "active" %}
-					  {% else %}
-						{% assign active_class = "" %}
-					  {% endif %}
+					  
 
 					  {% if item.children %}
 						<li class="dropdown {{active_class}}">
